@@ -1,0 +1,25 @@
+.CommentsBlock {
+  // border: 1px solid rgb(209, 58, 58);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-top: 7px;
+  max-height: 0;
+  transition: all 0.4s ease 0s;
+  overflow: hidden;
+  &_active {
+    max-height: 900px;
+  }
+}
+.commentItem {
+  background: rgb(161, 161, 161);
+  padding: 10px 20px;
+  margin-bottom: 7px;
+  width: 100%;
+  border-radius: 5px;
+}
+.commentDate {
+  font-size: 12px;
+  text-align: right;
+}

@@ -1,0 +1,116 @@
+.characterCard {
+  display: flex;
+  background: rgb(83, 83, 83);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  min-height: 130px;
+  box-shadow: -5px -5px 5px -3px rgba(6, 6, 6, 0.6) inset,
+    5px 5px 5px -5px rgba(255, 255, 255, 0.6) inset;
+}
+.characterData {
+  display: flex;
+  flex: 1 1 30%;
+}
+.avatar {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 5px;
+  background: #535353;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 5px 5px 10px #3b3b3b, inset -5px -5px 10px #616161;
+}
+.data {
+  flex: 1 1 auto;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.dataItem {
+  display: flex;
+  border-bottom: 1px solid rgb(51, 51, 51);
+  align-items: flex-end;
+  margin-bottom: 3px;
+}
+.title {
+  flex: 1 1 40%;
+  color: rgb(36, 36, 36);
+}
+.value {
+  flex: 1 1 60%;
+  flex-wrap: wrap;
+}
+.formWrapper {
+  flex: 1 1 auto;
+  background: rgb(149, 149, 149);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: inset 5px 5px 10px #525252, inset -5px -5px 10px #b3b3b3;
+}
+.textarea {
+  background: none;
+  width: 100%;
+  height: 70%;
+  padding: 10px;
+  color: rgb(238, 238, 238);
+  resize: none;
+  // flex: 1 1 60%;
+}
+.actions {
+  margin: 0 10px;
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0px;
+  border-top: 1px solid rgb(87, 87, 87);
+}
+.btn {
+  padding: 5px;
+  background: rgb(204, 104, 91);
+  background: rgb(65, 65, 65);
+  color: rgb(54, 54, 54);
+  border-radius: 5px;
+}
+.accord {
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.accordBtn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid rgb(70, 70, 70);
+  transition: all 0.2s ease 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &_active {
+    cursor: pointer;
+    border: 2px solid rgb(39, 39, 39);
+  }
+}
+@media screen and (max-width: 768px) {
+  .characterCard {
+    flex-direction: column;
+  }
+  .characterData {
+    margin-bottom: 20px;
+  }
+  .accord {
+    margin-top: 10px;
+  }
+  .textarea {
+    min-height: 100px;
+  }
+}

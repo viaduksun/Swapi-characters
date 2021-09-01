@@ -1,0 +1,13 @@
+.charactersPage {
+  // border: 2px solid rgb(212, 0, 166);
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageTitle {
+  margin-top: 20px;
+  font-size: 30px;
+  color: rgb(224, 224, 224);
+  text-align: center;
+}

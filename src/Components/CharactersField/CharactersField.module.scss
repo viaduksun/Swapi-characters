@@ -1,0 +1,14 @@
+.CharactersField {
+  // border: 1px solid rgb(200, 212, 31);
+  padding: 20px 200px;
+}
+@media screen and (max-width: 1024px) {
+  .CharactersField {
+    padding: 20px 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .CharactersField {
+    padding: 20px 0px;
+  }
+}

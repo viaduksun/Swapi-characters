@@ -1,0 +1,11 @@
+.header {
+  background: rgb(0, 0, 0);
+}
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  img {
+    height: 100%;
+  }
+}
